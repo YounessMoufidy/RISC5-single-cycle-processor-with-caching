@@ -1,0 +1,48 @@
+
+module MainDecoder
+	#(
+		parameter BUS_WIDTH=32
+	)
+	(
+		input  wire  [6:0]  		i_OpCode				,
+		input  wire 				i_ZeroFlag			,
+		output wire			  		o_PcSrc				,
+		output reg	 [1:0]		o_ResultSrc			,
+		output reg					o_MemWrite			,
+		output reg					o_MemRead			,
+		output reg					o_AluSrc				,
+		output reg	 [1:0]		o_ImmSrc				,
+		output reg					o_RegWrite			,
+		output reg	 [1:0]		o_AluOp				
+	);
+
+
+	reg r_Branch;
+	reg r_Jump;
+	
+	assign o_PcSrc=(r_Branch & i_ZeroFlag) || r_Jump;
+	
+	always @(*) begin
+		
+		case(i_OpCode)
+			
+			// R type
+			7'b0110011:begin	o_RegWrite=1'b1;o_AluSrc=1'b0;o_MemWrite=1'b0;o_ResultSrc=2'b00;r_Branch=1'b0;o_AluOp=2'b10;r_Jump=1'b0;o_MemRead=1'b0;  end
+			// Lw instruction
+			7'b0000011:begin	o_RegWrite=1'b1;o_ImmSrc=2'b00;o_AluSrc=1'b1;o_MemWrite=1'b0;o_ResultSrc=2'b01;r_Branch=1'b0;o_AluOp=2'b00;r_Jump=1'b0;o_MemRead=1'b1; end
+			// SW instruction
+			7'b0100011:begin	o_RegWrite=1'b0;o_ImmSrc=2'b01;o_AluSrc=1'b1;o_MemWrite=1'b1;r_Branch=1'b0;o_AluOp=2'b00;r_Jump=1'b0;o_MemRead=1'b0;end
+			// Beq instruction
+			7'b1100011:begin	o_RegWrite=1'b0;o_ImmSrc=2'b10;o_AluSrc=1'b0;o_MemWrite=1'b0;r_Branch=1'b1;o_AluOp=2'b01;r_Jump=1'b0;o_MemRead=1'b0;end
+			// I-type ALU
+			7'b0010011:begin	o_RegWrite=1'b1;o_ImmSrc=2'b00;o_AluSrc=1'b1;o_ResultSrc=2'b00;o_MemWrite=1'b0;r_Branch=1'b0;o_AluOp=2'b10;r_Jump=1'b0;o_MemRead=1'b0; end
+			// JAL instruction (it does not utilize the ALU)
+			7'b1101111:begin	o_RegWrite=1'b1;o_ImmSrc=2'b11;o_ResultSrc=2'b10;o_MemWrite=1'b0;r_Branch=1'b0;r_Jump=1'b1;o_MemRead=1'b0; end
+			
+			default	 :begin	o_RegWrite=1'b0;o_ImmSrc=2'b00;o_AluSrc=1'b0;o_ResultSrc=2'b00;o_MemWrite=1'b0;r_Branch=1'b0;o_AluOp=2'b00;r_Jump=1'b0;o_MemRead=1'b0; end
+			
+		endcase
+	
+	end
+	
+endmodule

@@ -1,0 +1,441 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/RISC V processor/RISC V processor single cycle/Datapath/Memory hierachy/Cache_unit
+vAdder
+Z0 !s110 1725473036
+!i10b 1
+!s100 bTPR];P00@QnXL<g:Tjfa2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IDT;aDDCcHd@n61f<X]5oV1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dE:/RISC V processor/RISC V processor single cycle/Top_Module
+w1725046161
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/Adder.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/Adder.v
+!i122 548
+L0 4 38
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1725473035.000000
+!s107 E:/RISC V processor/RISC V processor single cycle/Top_Module/TopModule.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/tb_TopModule.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/SignExtend.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Register_PIPO.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/RegFile.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/MUX41.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Mux21.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/MainMemory.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/MainDecoder.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/instruction_memory.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/DFlipFlop.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/ControlUnit.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/CacheUnit.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Cache_mem.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/cache_controller.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/AluDecoder.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Alu.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Adder.v|
+Z6 !s90 -reportprogress|300|-work|work|E:/RISC V processor/RISC V processor single cycle/Top_Module/Adder.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Alu.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/AluDecoder.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/cache_controller.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Cache_mem.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/CacheUnit.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/ControlUnit.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/DFlipFlop.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/instruction_memory.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/MainDecoder.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/MainMemory.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Mux21.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/MUX41.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/RegFile.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Register_PIPO.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/SignExtend.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/tb_TopModule.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/TopModule.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+n@adder
+vAlu
+R0
+!i10b 1
+!s100 m0TL8R4b6oS^JjfGS[3QX0
+R1
+ISIoIOMRm;Peilo9ggKShJ3
+R2
+R3
+w1724331627
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/Alu.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/Alu.v
+!i122 548
+L0 3 69
+R4
+r1
+!s85 0
+31
+R5
+Z9 !s107 E:/RISC V processor/RISC V processor single cycle/Top_Module/TopModule.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/tb_TopModule.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/SignExtend.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Register_PIPO.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/RegFile.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/MUX41.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Mux21.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/MainMemory.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/MainDecoder.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/instruction_memory.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/DFlipFlop.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/ControlUnit.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/CacheUnit.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Cache_mem.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/cache_controller.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/AluDecoder.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Alu.v|E:/RISC V processor/RISC V processor single cycle/Top_Module/Adder.v|
+R6
+!i113 1
+R7
+R8
+n@alu
+vAluDecoder
+R0
+!i10b 1
+!s100 _bA;dVa1ciZ1PQfGA4bjo1
+R1
+Ia5V2d7E>SjI7C_^<KUNZU3
+R2
+R3
+w1724267982
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/AluDecoder.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/AluDecoder.v
+!i122 548
+L0 2 53
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@alu@decoder
+vcache_controller
+R0
+!i10b 1
+!s100 =9LYkV>T[diMWFab2?[nL1
+R1
+I4l`Xl7@a=c[_Ll6jdmQ]T0
+R2
+R3
+w1725396636
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/cache_controller.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/cache_controller.v
+!i122 548
+L0 2 181
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+vCache_mem
+R0
+!i10b 1
+!s100 EL2812R3Y0IN3iRj5KIkJ2
+R1
+Ik55@oVh26:bbgV^7JQfQe2
+R2
+R3
+w1725044587
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/Cache_mem.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/Cache_mem.v
+!i122 548
+L0 4 104
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@cache_mem
+vCacheUnit
+R0
+!i10b 1
+!s100 GSodiHCV`1na2bF2lZ`Eh2
+R1
+IK@3Zz<YLF5US4G4LG8N=O0
+R2
+R3
+w1725310794
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/CacheUnit.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/CacheUnit.v
+!i122 548
+L0 3 147
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@cache@unit
+vControlUnit
+R0
+!i10b 1
+!s100 G3==Kl^>i=[TFYdXaa;3N0
+R1
+I6W3NU@aS?KimlZh]aM;Bm1
+R2
+R3
+w1725301052
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/ControlUnit.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/ControlUnit.v
+!i122 548
+L0 4 55
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@control@unit
+vDFlipFlop
+R0
+!i10b 1
+!s100 zf;lWQE?[PnYeOljFA6o60
+R1
+I@2R5>:LL11:jnL9_^knMg3
+R2
+R3
+w1724150862
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/DFlipFlop.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/DFlipFlop.v
+!i122 548
+L0 4 31
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@d@flip@flop
+vinstruction_memory
+R0
+!i10b 1
+!s100 n]E>Ca`Oe:bT_a;kQ080^0
+R1
+I1RaSG8Z_W5l86C?:NU0PL1
+R2
+R3
+w1725394491
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/instruction_memory.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/instruction_memory.v
+!i122 548
+L0 3 77
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+vMainDecoder
+R0
+!i10b 1
+!s100 9cjnKe8bjoROSL_z=84a?2
+R1
+IeJJf>^cMcJh[[CV0jT0Z=1
+R2
+R3
+w1725300995
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/MainDecoder.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/MainDecoder.v
+!i122 548
+L0 2 47
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@main@decoder
+vMainMemory
+R0
+!i10b 1
+!s100 2k_@J54GRPf_bIiRoKil80
+R1
+I`F7:nXhd?IN4Ol08TZL5E1
+R2
+R3
+w1725043751
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/MainMemory.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/MainMemory.v
+!i122 548
+L0 4 65
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@main@memory
+vMux21
+R0
+!i10b 1
+!s100 XczVYC9[nlMh1>AG>oMT:1
+R1
+INOM:TgAF[n11AiKh7@zkN2
+R2
+R3
+w1724169269
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/Mux21.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/Mux21.v
+!i122 548
+L0 1 28
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@mux21
+vMUX41
+R0
+!i10b 1
+!s100 @[QIiBdSTENPCLoM_SHho3
+R1
+I[I8b@7k;;1b]VHJ6Md;TE1
+R2
+R3
+w1724532705
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/MUX41.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/MUX41.v
+!i122 548
+L0 3 24
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@m@u@x41
+vRegFile
+R0
+!i10b 1
+!s100 PMh5EgSc0EjMJAbdoECdY2
+R1
+IiOCZKUE<e?FOgV;9n4h^31
+R2
+R3
+w1724191556
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/RegFile.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/RegFile.v
+!i122 548
+L0 2 40
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@reg@file
+vRegister_PIPO
+R0
+!i10b 1
+!s100 M[laPiSC[l^2P=>1L^ooQ0
+R1
+I[WC7[LEChTW5ca:QSjPD?3
+R2
+R3
+w1725306214
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/Register_PIPO.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/Register_PIPO.v
+!i122 548
+L0 3 23
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@register_@p@i@p@o
+vSignExtend
+R0
+!i10b 1
+!s100 mm]Q2ZVZ`DV^f3l9HWoO_1
+R1
+ITgX]bXk=Ae_:bCi^@_i3I3
+R2
+R3
+w1725306715
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/SignExtend.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/SignExtend.v
+!i122 548
+L0 3 40
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@sign@extend
+vtb_TopModule
+R0
+!i10b 1
+!s100 ZHmzFC=DY;5K6<2DG[f`S0
+R1
+IQVX:_Y1oHjkF8a?7K14fC0
+R2
+R3
+w1725472984
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/tb_TopModule.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/tb_TopModule.v
+!i122 548
+L0 2 86
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+ntb_@top@module
+vTopModule
+R0
+!i10b 1
+!s100 6bZYHG<;ecJZ6R1Lg6XJM1
+R1
+I_30b>23;XCeJ4BIRUJWf43
+R2
+R3
+w1725314540
+8E:/RISC V processor/RISC V processor single cycle/Top_Module/TopModule.v
+FE:/RISC V processor/RISC V processor single cycle/Top_Module/TopModule.v
+!i122 548
+L0 2 294
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@top@module

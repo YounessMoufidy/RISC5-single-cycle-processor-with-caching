@@ -1,0 +1,9 @@
+
+State Machine - |TopModule|CacheUnit:memory_cache|cache_controller:CacheController0|r_state
+Name r_state.s_ALLOCATE r_state.s_WRITE_BACK r_state.s_WRITE r_state.s_READ r_state.s_COMPARE r_state.s_IDLE 
+r_state.s_IDLE 0 0 0 0 0 0 
+r_state.s_COMPARE 0 0 0 0 1 1 
+r_state.s_READ 0 0 0 1 0 1 
+r_state.s_WRITE 0 0 1 0 0 1 
+r_state.s_WRITE_BACK 0 1 0 0 0 1 
+r_state.s_ALLOCATE 1 0 0 0 0 1 

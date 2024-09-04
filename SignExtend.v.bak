@@ -1,0 +1,42 @@
+
+
+module SignExtend
+
+	#(parameter BUS_WIDTH=32)
+	(
+		input wire  i_ImmSrc								,
+		input wire [31:7] i_Instrucion	,
+		output reg	[BUS_WIDTH-1:0] o_ImmExt		
+	);
+	
+	
+	always@(*) begin
+	
+		case(i_ImmSrc)
+			
+			//I Type instruction
+			
+			2'b00		:	o_ImmExt={{20{i_Instrucion[31]}},i_Instrucion[31:20]};
+			
+			//S Type instruction
+			
+			2'b01		:	o_ImmExt={{20{i_Instrucion[31]}},i_Instrucion[31:25],i_Instrucion[11:7]};
+			
+			//B Type instruction
+			
+			2'b10		:	o_ImmExt={{20{i_Instrucion[31]}},i_Instrucion[7],i_Instrucion[30:25],i_Instrucion[11:8],1'b0};
+		
+			//J Type instruction
+			
+			2'b11		:	o_ImmExt={{20{i_Instrucion[11]}},i_Instrucion[30:0],i_Instrucion[11:0]};
+			
+			
+			
+			default	: o_ImmExt={{12{i_Instrucion[31]}},i_Instrucion[19:12],i_Instrucion[20],i_Instrucion[30:21],1'b0};
+		
+		end case
+	
+	end
+
+
+endmodule
