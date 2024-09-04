@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TopModule
-Tue Sep 03 20:41:31 2024
+Wed Sep 04 20:12:10 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Sep 03 20:41:31 2024       ;
+; Analysis & Synthesis Status     ; Successful - Wed Sep 04 20:12:10 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; TopModule                                   ;
 ; Top-level Entity Name           ; TopModule                                   ;
@@ -5859,7 +5859,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Sep 03 20:41:19 2024
+    Info: Processing started: Wed Sep 04 20:11:50 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TopModule -c TopModule
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -5918,7 +5918,7 @@ Warning (12125): Using design file cache_controller.v, which is not specified as
     Info (12023): Found entity 1: cache_controller File: E:/RISC V processor/RISC V processor single cycle/Top_Module/cache_controller.v Line: 2
 Warning (10222): Verilog HDL Parameter Declaration warning at cache_controller.v(31): Parameter Declaration in module "cache_controller" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: E:/RISC V processor/RISC V processor single cycle/Top_Module/cache_controller.v Line: 31
 Info (12128): Elaborating entity "cache_controller" for hierarchy "CacheUnit:memory_cache|cache_controller:CacheController0" File: E:/RISC V processor/RISC V processor single cycle/Top_Module/cacheunit.v Line: 79
-Warning (10230): Verilog HDL assignment warning at cache_controller.v(145): truncated value with size 32 to match size of target (2) File: E:/RISC V processor/RISC V processor single cycle/Top_Module/cache_controller.v Line: 145
+Warning (10230): Verilog HDL assignment warning at cache_controller.v(147): truncated value with size 32 to match size of target (2) File: E:/RISC V processor/RISC V processor single cycle/Top_Module/cache_controller.v Line: 147
 Warning (12125): Using design file cache_mem.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Cache_mem File: E:/RISC V processor/RISC V processor single cycle/Top_Module/cache_mem.v Line: 4
 Info (12128): Elaborating entity "Cache_mem" for hierarchy "CacheUnit:memory_cache|Cache_mem:Cache_mem0" File: E:/RISC V processor/RISC V processor single cycle/Top_Module/cacheunit.v Line: 110
@@ -5947,8 +5947,8 @@ Info (21057): Implemented 37 device resources after synthesis - the final resour
     Info (21061): Implemented 32 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
     Info: Peak virtual memory: 4917 megabytes
-    Info: Processing ended: Tue Sep 03 20:41:31 2024
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Processing ended: Wed Sep 04 20:12:10 2024
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:17
 
 

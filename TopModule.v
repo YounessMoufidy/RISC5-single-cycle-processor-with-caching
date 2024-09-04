@@ -6,16 +6,16 @@ module TopModule
 		parameter INST_MEM_WIDTH			=8										,
 		parameter INST_MEM_DEPTH			=32									,
 		parameter INST_MEM_ADDR_WIDTH		=$clog2(INST_MEM_DEPTH)			,		
-		parameter REG_DEPTH=32														,
-		parameter ADDRESS_WIDTH=$clog2(REG_DEPTH)								,
-		parameter BLOCK_SIZE			=128											,
-		parameter TAG_SIZE   		=3				   							,
-		parameter ADDRESS_WIDTH_CACHE		=10											,
-		parameter INDEX_SIZE 		=5												,
-		parameter CACHE_MEM_WIDTH	=128											,
-		parameter CACHE_MEM_DEPTH	=2**INDEX_SIZE								,
-		parameter MAIN_MEM_DEPTH	=1024											,
-		parameter MAIN_MEM_WIDTH	=32														
+		parameter REG_DEPTH					=32									,
+		parameter ADDRESS_WIDTH				=$clog2(REG_DEPTH)				,
+		parameter BLOCK_SIZE					=128									,
+		parameter TAG_SIZE   				=3				   					,
+		parameter ADDRESS_WIDTH_CACHE		=10									,
+		parameter INDEX_SIZE 				=5										,
+		parameter CACHE_MEM_WIDTH			=128									,
+		parameter CACHE_MEM_DEPTH			=2**INDEX_SIZE						,
+		parameter MAIN_MEM_DEPTH			=1024									,
+		parameter MAIN_MEM_WIDTH			=32														
 		
 		
 		
@@ -27,7 +27,7 @@ module TopModule
 	)
 	(
 		input wire  i_clk											,
-		input wire  i_aresetn										,
+		input wire  i_aresetn									,
 		output wire o_overflow_flag_PC						,
 		output wire o_overflow_flag_PC_Branch				,
 		output wire o_overflow_flag_ALU
@@ -35,18 +35,18 @@ module TopModule
 	);
 	
 	//Program counter related
-	wire [BUS_WIDTH-1:0]  w_PCTarget;
-	wire [BUS_WIDTH-1:0] w_PCPlus4;
-	wire [BUS_WIDTH-1:0] w_PCNext;
-	wire [BUS_WIDTH-1:0] w_pc;
+	wire [BUS_WIDTH-1:0]  w_PCTarget	;
+	wire [BUS_WIDTH-1:0] w_PCPlus4	;
+	wire [BUS_WIDTH-1:0] w_PCNext		;
+	wire [BUS_WIDTH-1:0] w_pc			;
 	
 	//Instruction memory
 	wire [BUS_WIDTH-1:0] w_Instruction				;
 	//Control unit related
-	wire w_PCSrc						;
+	wire w_PCSrc								;
 	
 	reg [6:0] r_OpCode						;
-	reg r_Function7_5					;
+	reg r_Function7_5							;
 	reg [2:0] r_Function3					;
 	wire	 [1:0]		w_ResultSrc			;
 	wire					w_MemWrite			;
@@ -81,21 +81,21 @@ module TopModule
 	//Register file 
 	assign w_Read_Address1=w_Instruction[19:15];
 	assign w_Read_Address2=w_Instruction[24:20];
-	assign w_Write_Address=w_Instruction[11:7];
+	assign w_Write_Address=w_Instruction[11:7] ;
 
 	//Control unit inputs 
 	always @(*) begin
-		r_OpCode=w_Instruction[6:0];
-		r_Function7_5=w_Instruction[30];
-		r_Function3=w_Instruction[14:12];
+		r_OpCode=w_Instruction[6:0]      ;
+		r_Function7_5=w_Instruction[30]  ;
+		r_Function3=w_Instruction[14:12] ;
 	end
 	assign w_SrcA=w_Read_data1;
 	Mux21
 	#(.BUS_WIDTH(BUS_WIDTH))
 	Mux21_selectPC
 	(
-		.i_data1 (w_PCPlus4),
-	   .i_data2 (w_PCTarget)	,
+		.i_data1 (w_PCPlus4) ,
+	   .i_data2 (w_PCTarget),
 	   .i_sel	(w_PCSrc)	,
 		.o_data	(w_PCNext)
 	
@@ -123,7 +123,7 @@ module TopModule
 	AdderPcPLUS4
 	(
 		.i_operand1			(w_pc)					,
-	   .i_operand2			(32'd4)				,
+	   .i_operand2			(32'd4)				   ,
 	   .o_result			(w_PCPlus4)				,//it is valid because o_result is of type wire
 	   .o_overflow_flag	(o_overflow_flag_PC)
 	);
@@ -181,9 +181,9 @@ module TopModule
 	)
 	RF0
 	(
-		 .i_clk		      (i_clk				)					,
-	    .i_aresetn		   (i_aresetn			)				,
-	    .i_RegWrite		(w_RegWrite			)			,	
+		 .i_clk		      (i_clk				)		,
+	    .i_aresetn		   (i_aresetn			)		,
+	    .i_RegWrite		(w_RegWrite			)		,	
 	    .i_Read_Address1	(w_Read_Address1	)		,
 	    .i_Read_Address2	(w_Read_Address2	)		,
 	    .i_Write_Address	(w_Write_Address	)		,
@@ -202,7 +202,7 @@ module TopModule
 	)
 	SignExtend0
 	(
-		.i_ImmSrc(w_ImmSrc)				,
+		.i_ImmSrc(w_ImmSrc)										,
 		.i_ImmToBeExtended(w_Instruction[BUS_WIDTH-1:7]),
 		.o_ImmExt(w_ImmExt)
 	);
@@ -215,9 +215,9 @@ module TopModule
 	)
 	Adder0
 	(
-		.i_operand1			(w_ImmExt),	
-	   .i_operand2			(w_pc)	,	
-	   .o_result			(w_PCTarget),
+		.i_operand1			(w_ImmExt)						,	
+	   .i_operand2			(w_pc)							,	
+	   .o_result			(w_PCTarget)					,
 	   .o_overflow_flag	(o_overflow_flag_PC_Branch)
 	);
 	
@@ -229,9 +229,9 @@ module TopModule
 	)
 	Mux21_ALU
 	(
-		.i_data1(w_Read_data2),
-	   .i_data2(w_ImmExt),
-	   .i_sel  (w_AluSrc),
+		.i_data1(w_Read_data2)	,
+	   .i_data2(w_ImmExt)		,
+	   .i_sel  (w_AluSrc)		,
 		.o_data (w_SrcB)
 	);
 	//The ALU
@@ -266,8 +266,8 @@ module TopModule
 	   .i_aresetn	(i_aresetn)							,
 	   .i_MemRead	(w_MemRead)							,
 	   .i_MemWrite(w_MemWrite)							,
-		.i_AddressCpu(w_ALUResult[9:0])						,
-		.i_data	 (w_Read_data2)								,
+		.i_AddressCpu(w_ALUResult[9:0])				,
+		.i_data	 (w_Read_data2)						,
 		.o_DataToCpu(w_ReadData)						,
 		.o_Hit_Or_Miss	(w_Hit_Or_Miss)				,
 		.o_stall	 		(w_stall)
@@ -280,11 +280,11 @@ module TopModule
 	#(.BUS_WIDTH(BUS_WIDTH))
 	MuxToRegFile
 	(
-		.i_data1	(w_ALUResult),
-		.i_data2	(w_ReadData),
-		.i_data3	(w_PCPlus4),
-		.i_data4	(32'b0),
-	   .i_sel	(w_ResultSrc), 	
+		.i_data1	(w_ALUResult)	,
+		.i_data2	(w_ReadData)	,
+		.i_data3	(w_PCPlus4)		,
+		.i_data4	(32'b0)			,
+	   .i_sel	(w_ResultSrc)	, 	
 		.o_data  (w_Write_data)
 	
 	

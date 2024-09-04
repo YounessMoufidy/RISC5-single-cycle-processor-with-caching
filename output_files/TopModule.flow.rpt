@@ -1,5 +1,5 @@
 Flow report for TopModule
-Tue Sep 03 20:42:36 2024
+Wed Sep 04 20:13:20 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Sep 03 20:42:31 2024       ;
+; Flow Status                     ; Successful - Wed Sep 04 20:13:14 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; TopModule                                   ;
 ; Top-level Entity Name           ; TopModule                                   ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/03/2024 20:34:56 ;
+; Start date & time ; 09/04/2024 20:11:50 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TopModule           ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 2499183943747.172539209617872          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 2499183943747.172547711004216          ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -92,15 +92,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4914 MB             ; 00:00:09                           ;
-; Fitter               ; 00:00:25     ; 1.0                     ; 6713 MB             ; 00:00:25                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4835 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5195 MB             ; 00:00:02                           ;
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4917 MB             ; 00:00:08                           ;
-; Fitter               ; 00:00:52     ; 1.0                     ; 6723 MB             ; 00:00:54                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4835 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5194 MB             ; 00:00:02                           ;
-; Total                ; 00:01:58     ; --                      ; --                  ; 00:01:47                           ;
+; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4917 MB             ; 00:00:17                           ;
+; Fitter               ; 00:00:50     ; 1.0                     ; 6715 MB             ; 00:00:53                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4835 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 5194 MB             ; 00:00:02                           ;
+; Total                ; 00:01:21     ; --                      ; --                  ; 00:01:16                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,20 +109,12 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; DESKTOP-GP3QRL1  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-GP3QRL1  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-GP3QRL1  ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; DESKTOP-GP3QRL1  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-GP3QRL1  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-GP3QRL1  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-GP3QRL1  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off TopModule -c TopModule
-quartus_fit --read_settings_files=off --write_settings_files=off TopModule -c TopModule
-quartus_asm --read_settings_files=off --write_settings_files=off TopModule -c TopModule
-quartus_sta TopModule -c TopModule
 quartus_map --read_settings_files=on --write_settings_files=off TopModule -c TopModule
 quartus_fit --read_settings_files=off --write_settings_files=off TopModule -c TopModule
 quartus_asm --read_settings_files=off --write_settings_files=off TopModule -c TopModule
